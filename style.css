@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(32, 31, 31);
+}
+
+/* Header css*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2 {
+    color: white;
+    margin-left: 30px;
+    margin-top: 25px;
+    font-size: 2.5rem;
+}
+nav {
+    text-align: right;
+    margin-top: 25px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;   
+    padding-right: 50px;
+}
+
+@media (max-width:756px) {
+    header h2 {
+        margin-left: 20px;
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+    nav {
+        margin-top: 25px;
+    }
+    nav > a {
+        font-size: 1.4rem;   
+        padding-right: 25px;
+    }
+}
+
+/* footer */
+
+footer {
+    margin: 30px;
+    background-color: #333333;
+}
+form {
+    padding: 35px;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont-1 > h2 {
+    color: white;
+    font-size: 4rem;
+}
+.cont-2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px yellow solid;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+.cont-2 label {
+    color: black;
+    font-size: 1.3rem;
+}
+form > .arrange {
+    display: flex;
+}
+.arrange .Fullname {
+    margin-right: 70px;
+}
+form input, select, textarea {
+    outline: 0;
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(37, 133, 197);
+    background-color: transparent;
+}
+form textarea {
+    width: 85%;
+    height: 230px;
+}
+form .textmesg {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+form .action input {
+    cursor: pointer;
+    font-weight: 550;
+    height: 35px;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+@media (max-width:600px) {
+    .cont-1 {
+        margin-top: 20px;
+    }
+    .cont-1 > h2 {
+        font-size: 2rem;
+    }
+    .cont-2 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .cont-2 label {
+        font-size: 0.9rem;
+    }
+    form {
+        padding: 15px;
+    }
+    .arrange .Fullname {
+        margin-right: 30px;
+    }
+    form input, select, textarea {
+        font-size: 8px;
+        padding: 3px;
+    }
+    form textarea {
+        width: 65%;
+        height: 90px;
+    }
+    form .textmesg {
+        padding-top: 10px;
+        padding-bottom: 8px;
+    }
+    form .action input {
+        height: 20px;
+        padding: 0 5px;
+        margin-right: 8px;
+    }
+}
+
+
+/* main css*/
+
+/* part 1 */
+
+.first {
+    margin: 50px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#heroimg {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(211, 214, 25), orange, rgb(199, 66, 88), purple, blue);
+    padding: 10px;
+    overflow: hidden;
+}
+#heroimg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all ease 1s;
+}
+#heroimg:hover img {
+    scale: 1.2 ;
+}
+
+#content p {
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 15px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-evenly;
+}
+.second > a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.8rem; 
+}
+
+/* part 2 */
+
+section {
+    margin: 5%;
+}
+section h3 {
+    font-size: 1.7rem;
+    color: white;
+}
+section > div {
+    margin-top: 10px;
+}
+section > div > P {
+    padding-left: 8%;
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 15px;
+}
+.Experience ol {
+    color: white;
+    padding-top: 10px;
+}
+.test {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.test > li {
+    font-size: 1.5rem;
+    margin-left: 8%;
+    margin-right: 25%;
+}
+.Kyra > h2 {
+    font-size: 2rem;
+    padding-left: 25px;
+}
+.Kyra-li {
+    padding-top: 10px;
+}
+.Kyra-li  ul > li {
+    font-size: 1.3rem;
+    padding-top: 8px;
+}
+
+/* media querry of main tag*/
+
+@media (max-width:560px) {
+    .first {
+        margin: 30px;
+        padding: 20px;
+    }
+    #heroimg {
+        width: 225px;
+        height: 275px;
+        padding: 6px;
+    }
+    #content p {
+        font-size: 1.3rem;
+        padding-top: 12px;
+    }
+    .second > a {
+        font-size: 1.2rem; 
+    }
+    section h3 {
+        font-size: 1rem;
+    }
+    section > div {
+        margin-top: 5px;
+    }
+    section > div > P {
+        padding-left: 10%;
+        font-size: 0.9rem;
+        padding-top: 7px;
+    }
+    .Experience ol {
+        padding-top: 7px;
+    }
+    .test {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .test > li {
+        font-size: 0.8rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .Kyra > h2 {
+        font-size: 0.7rem;
+        padding-left: 0px;
+    }
+    .Kyra-li {
+        padding-top: 5px;
+    }
+    .Kyra-li  ul > li {
+        color: white;
+        font-size: 0.5rem;
+        padding-top: 3px;
+    }
+}
