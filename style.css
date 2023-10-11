@@ -29,19 +29,21 @@ nav > a {
     margin-right: 50px;
     position: relative;
 }
-nav a:before {
+nav a::after {
     content: "";
     position: absolute;
     top: 90%;
     left: 0;
-    width: 0%;
+    width: 100%;
     height: 3px;
     background-color: crimson;
-    transition: all 0.5s linear;
+    transition: ease-in-out 0.7s;
+    transform: scaleX(0);
 }
-nav a:hover:before {
-    width: 100%;
+nav a:hover::after {
+    transform: scaleX(1);
 }
+
 
 @media (max-width:756px) {
     header h2 {
@@ -53,8 +55,8 @@ nav a:hover:before {
         margin-top: 25px;
     }
     nav > a {
-        font-size: 1.4rem;   
-        padding-right: 25px;
+        font-size: 1rem;   
+        margin-right: 15px;
     }
 }
 
@@ -197,15 +199,11 @@ form .action input {
     color: white;
     padding-top: 15px;
 }
-
-.second {
-    display: flex;
-    justify-content: space-evenly;
-}
-.second > a {
+.second  p {
     color: white;
-    text-decoration: none;
     font-size: 2.8rem; 
+    display: inline-block;
+    margin: 0px 80px;
 }
 
 /* part 2 */
@@ -240,7 +238,7 @@ section > div > P {
     font-size: 1.5rem;
 }
 .Kyra {
-    padding: 10px 0px 10px;
+    padding: 6px 0px 10px;
 }
 .Kyra summary {
     font-size: 1.4rem;
@@ -269,8 +267,9 @@ section > div > P {
         font-size: 1.3rem;
         padding-top: 12px;
     }
-    .second > a {
+    .second  p {
         font-size: 1.2rem; 
+        margin: 0px 30px;
     }
     section {
         margin: 4% 5% 4%;
@@ -294,7 +293,7 @@ section > div > P {
         font-size: 1rem;
     }
     .Kyra {
-        padding: 10px 0px 10px;
+        padding: 6px 0px 10px;
     }
     .Kyra  summary {
         font-size: 0.9em;
