@@ -225,9 +225,18 @@ section > div > P {
 .test > li {
     font-size: 1.5rem;
 }
-.Kyra  summary {
+.Kyra {
+    padding: 10px 0px 10px;
+}
+.Kyra summary {
     font-size: 1.4rem;
     cursor: pointer;
+}
+.Kyra ul {
+    padding-top: 8px;
+}
+.Kyra ul li {
+    padding-top: 4px;
 }
 
 /* media querry of main tag*/
@@ -263,28 +272,24 @@ section > div > P {
         font-size: 0.9rem;
         padding-top: 7px;
     }
-    .Experience ol {
-        padding-top: 7px;
-    }
     .test {
-        margin-top: 10px;
-        margin-bottom: 25px;
+        margin: 0px 30px 0px;
+        padding-bottom: 10px ;
     }
     .test > li {
+        font-size: 1rem;
+    }
+    .Kyra {
+        padding: 10px 0px 10px;
+    }
+    .Kyra  summary {
+        font-size: 0.9em;
+    }
+    .Kyra ul {
+        padding-top: 6px;
+    }
+    .Kyra ul li {
+        padding-top: 2px;
         font-size: 0.8rem;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .Kyra > h2 {
-        font-size: 0.7rem;
-        padding-left: 0px;
-    }
-    .Kyra-li {
-        padding-top: 5px;
-    }
-    .Kyra-li  ul > li {
-        color: white;
-        font-size: 0.5rem;
-        padding-top: 3px;
     }
 }
