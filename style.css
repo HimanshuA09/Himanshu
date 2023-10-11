@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(0, 0, 0);
 }
 
 /* Header css*/
@@ -106,7 +106,7 @@ form .action input {
 
 @media (max-width:600px) {
     footer {
-    margin: 30px 0px;
+        margin: 30px 0px;
     }
     .cont-1 {
         margin-top: 20px;
@@ -197,7 +197,9 @@ form .action input {
 /* part 2 */
 
 section {
-    margin: 5%;
+    margin: 3% 5% 3%;
+    padding: 2%;
+    background-color: #222222;
 }
 section h3 {
     font-size: 1.7rem;
@@ -205,6 +207,7 @@ section h3 {
 }
 section > div {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 section > div > P {
     padding-left: 8%;
@@ -213,37 +216,26 @@ section > div > P {
     padding-top: 15px;
 }
 .Experience ol {
-    color: white;
-    padding-top: 10px;
-}
-.test {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding-top: 20px;
 }
 .test > li {
     font-size: 1.5rem;
-    margin-left: 8%;
-    margin-right: 25%;
 }
-.Kyra > h2 {
-    font-size: 2rem;
-    padding-left: 25px;
-}
-.Kyra-li {
-    padding-top: 10px;
-}
-.Kyra-li  ul > li {
-    font-size: 1.3rem;
-    padding-top: 8px;
+.Kyra  summary {
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 /* media querry of main tag*/
 
 @media (max-width:560px) {
     .first {
-        margin: 30px;
-        padding: 20px;
+        margin: 25px;
+        padding: 0px;
     }
     #heroimg {
         width: 225px;
@@ -256,6 +248,9 @@ section > div > P {
     }
     .second > a {
         font-size: 1.2rem; 
+    }
+    section {
+        margin: 4% 5% 4%;
     }
     section h3 {
         font-size: 1rem;
