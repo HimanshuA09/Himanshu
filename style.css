@@ -120,6 +120,7 @@ form {
     border: 2px yellow solid;
     background-color: #d9d9d9;
     border-radius: 10px;
+    box-shadow: 10px 5px 5px #000000;
 }
 .cont-2 label {
     color: black;
