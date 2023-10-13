@@ -117,7 +117,7 @@
                 <h2><em>Lets Connect</em></h2>
             </div>
             <div class="cont-2">
-                <form action="">
+                <form autocomplete="off" method="POST" name="PRhimanshu">
                     <div class="arrange">
                         <div class="Fullname">
                             <label for="Name">Name</label>
@@ -128,16 +128,16 @@
                             <label for="Purpose">Purpose</label>
                             <br>
                             <select name="Purpose" id="Purpose">
-                                <option value="">Select the purpose</option>
-                                <option value="">Causal</option>
-                                <option value="">Official</option>
+                                <option value="Not selected">Select the purpose</option>
+                                <option value="Causal">Causal</option>
+                                <option value="Official">Official</option>
                             </select>
                         </div>
                     </div>
                     <div class="textmesg">
                         <label for="Message">Message</label>
                         <br>
-                        <textarea name="Message" id="Message" placeholder="Drop me a line....."></textarea>
+                        <textarea name="Message" id="Message" required="required" placeholder="Drop me a line....."></textarea>
                     </div>
                     <div class="action">
                         <input type="submit" value="Submit" name="Submit">
@@ -146,6 +146,17 @@
                 </form>
             </div>
         </div>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxSHewEYx14uYrDGBAx2LxQrrPudJckwo-0TM5PZCGyNG3CMsiL6JkE-YCQdN6sSacvdw/exec'
+            const form = document.forms['PRhimanshu']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting..! I Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </footer>
     <div class="bottom">
         <P><em>Thanks for visiting</em></P>
