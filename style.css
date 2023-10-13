@@ -201,12 +201,12 @@ form .action input {
     }
     form .textmesg {
         padding-top: 10px;
-        padding-bottom: 8px;
+        padding-bottom: 0px;
     }
     form .action input {
-        height: 20px;
-        padding: 0 5px;
-        margin-right: 8px;
+        height: 15px;
+        padding: 0 3px;
+        margin-right: 6px;
     }
     .bottom p {
     font-size: 1rem;
