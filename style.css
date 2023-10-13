@@ -20,7 +20,7 @@ header h2 {
 }
 nav {
     text-align: right;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 50px;
 }
 nav > a {
@@ -65,7 +65,7 @@ nav .icon-2 > a {
         font-size: 1.5rem;
     }
     nav {
-        margin-top: 25px;
+        margin-top: 18px;
         margin-right: 15px;
     }
     nav > a {
